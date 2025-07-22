@@ -4,8 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>System Comment</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="comments">
+        <h2>Komentar</h2>
+        <form id="comment-form">
+            <label for="name">Nama:</label>
+            <input type="text" name="name" id="name" required>
+            <label for="comment">Komentar :</label>
+            <textarea name="comment" id="comment" required></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+    <div id="comment-list"></div>
+
+
+    <script src="java.js"></script>
 </body>
 </html>

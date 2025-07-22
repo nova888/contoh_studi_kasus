@@ -4,8 +4,8 @@ const commentList = document.getElementById("comment-list")
 commentForm.addEventListener("submit", function(event){
     event.preventDefault()
 
-    const name = this.element["name"].value
-    const comment = this.element["comment"].value
+    const name = this.elements["name"].value    
+    const comment = this.elements["comment"].value
 
     const commentItem = document.createElement("div")
     commentItem.classList.add('comment')
@@ -14,5 +14,5 @@ commentForm.addEventListener("submit", function(event){
         <p>${comment}</p>
     `
     commentList.appendChild(commentItem)
-    this.requestFullscreen()
+    this.reset()
 })

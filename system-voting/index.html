@@ -4,13 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>System Voting</title>
+    <style>
+        body{
+            font-family: serif;
+            text-align: center;
+        }
+        h1{
+            color: #333;
+        }
+        .options{
+            margin-top: 20px;
+        }
+        button{
+            padding: 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #result{
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Pilihan Favoritmu</h1>
+    <h1>Pilihan Ketua RT</h1>
     <div class="option">
         <button id="option1">Nova</button>
         <button id="option2">Budi</button>
         <button id="option3">Dedi</button>
+    </div>
+    <div id="result">
+        Hasil Voting :
     </div>
     <script src="script.js"></script>
 </body>
